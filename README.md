@@ -4,13 +4,10 @@ Position-based Wordle Solver
 -average of 3.63 moves
 
 How the Guess is Determined:
-
 -a list of list for each letter in the alphabet and each position in a five-letter word is created
   [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], ...]
 -an integer is increased by 1 for each possible answer left that has the corresponding letter in the corresponding position
-
-the first guess 'slate' is determined by this method. since no information is known at the start of the game, the first guess is always slate. to prevent it from having the calculate this each time, an if statement is included to set the guess to 'slate' when all the possible answers are still left
-
+*the first guess 'slate' is determined by this method. since no information is known at the start of the game, the first guess is always slate. to prevent it from having the calculate this each time, an if statement is included to set the guess to 'slate' when all the possible answers are still left
 -if only similar answers are left, it guesses a word using the letters they don't have in common
   ex. 
     for the answer: 'shall'
